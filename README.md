@@ -165,6 +165,10 @@ Rechnungsanalyse-KI ist speziell für den Einsatz in deutschen Unternehmen entwi
 - **Zugriffskontrolle** — Streamlit-Authentifizierung optional integrierbar
 - **Audit-Log** — Alle Prüfungen und Exporte werden protokolliert
 
+
+## 👤 Autor
+
+**Cela** — Freelancer für digitale Verwaltungslösungen
 ## 📄 Lizenz
 
 MIT License — siehe [LICENSE](LICENSE)
