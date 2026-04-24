@@ -1,0 +1,23 @@
+ollama:
+  url: "http://localhost:11434"
+  model: "llama3.1"
+  timeout: 60
+
+anomaly_detection:
+  risk_threshold: 70
+  check_duplicates: true
+  check_amount_variance: true
+  amount_variance_percent: 20
+
+export:
+  default_format: "csv"
+  datev_format: "EXTF"
+
+database:
+  path: "data/rechnungsanalyse.db"
+
+smtp:
+  host: ""
+  port: 587
+  sender: ""
+  recipients: []
