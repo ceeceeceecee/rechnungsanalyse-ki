@@ -11,6 +11,11 @@ from processor.invoice_scanner import extract_invoice_data
 from processor.anomaly_detector import check_anomalies
 from processor.export import export_invoices
 
+# -- Unified Theme System --
+import sys, os as _theme_os
+sys.path.insert(0, _theme_os.path.dirname(_theme_os.path.abspath(__file__)))
+from theme import init_theme, theme_toggle_sidebar, app_footer
+
 
 def init():
     """Initialisiere Datenbank und Session State."""
@@ -27,6 +32,8 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded",
     )
+
+    init_theme()
 
     # Sidebar
     with st.sidebar:
@@ -244,3 +251,9 @@ def show_settings():
 
 if __name__ == "__main__":
     main()
+
+# -- Theme Toggle --
+theme_toggle_sidebar()
+
+# -- Footer --
+app_footer()
