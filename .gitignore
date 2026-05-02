@@ -1,8 +1,9 @@
+database/
+processor/
+config/
+data/
 __pycache__/
 *.pyc
-.env
-config/settings.yaml
-data/
+.DS_Store
 *.db
-.venv/
-*.egg-info/
+.env
