@@ -222,7 +222,8 @@ def show_settings():
         st.subheader("KI-Backend konfigurieren")
         st.info("Ollama ist das Standard-Backend (DSGVO-konform, lokal).")
 
-        ollama_url = st.text_input("Ollama URL", value="http://localhost:11434")
+        default_url = os.environ.get("OLLAMA_HOST", "http://ollama:11434")
+        ollama_url = st.text_input("Ollama URL", value=default_url)
         ollama_model = st.text_input("Ollama Modell", value="llama3.1")
 
         risk_threshold = st.slider("Risiko-Schwellwert", 0, 100, value=70)
